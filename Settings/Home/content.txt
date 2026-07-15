@@ -3,7 +3,7 @@
 #   Edit the text after each colon. Don't change the labels.
 # ============================================================
 
-HERO STATUS: Free estimates · We beat any quote
+HERO STATUS: Free estimates
 HERO TITLE LINE 1: Security cameras & alarms,
 HERO TITLE LINE 2: done right.
 HERO SUB: Professional installation of security cameras and alarm systems for your home or business — at the best price around.
