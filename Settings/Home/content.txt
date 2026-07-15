@@ -9,9 +9,9 @@ HERO TITLE LINE 2: done right.
 HERO SUB: Professional installation of security cameras and alarm systems for your home or business — at the best price around.
 HERO PRIMARY BTN: Get a Free Estimate
 HERO SECONDARY BTN: View Services
-HERO META 1: Best priced in town
+HERO META 1: Best priced in town for commerical
 HERO META 2: No monthly subscription options
-HERO META 3: Home & business
+HERO META 3: Home & business Protection
 
 # ---------- Trust strip (the 4 badges) ----------
 TRUST 1: Best Priced
