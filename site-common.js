@@ -99,18 +99,18 @@
   /* ============================================================
      NAVBAR
      ============================================================ */
-  const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const page = (location.pathname.replace(/\/+$/, '').split('/').pop() || 'index').toLowerCase().replace(/\.html$/, '') || 'index';
   const nav = document.createElement('nav');
   nav.className = 'navbar'; nav.id = 'navbar';
   nav.innerHTML =
-    '<a href="index.html" class="navbar__logo">' +
+    '<a href="/" class="navbar__logo">' +
       '<img class="navbar__logo-img" id="navLogo" src="Photos/LogoClear.png" alt="AZ Desert Security Services" />' +
       '<span class="navbar__name" id="navName">SecureView</span>' +
     '</a>' +
     '<ul class="navbar__links" id="navLinks">' +
-      '<li><a href="index.html" data-page="index.html">Home</a></li>' +
-      '<li><a href="services.html" data-page="services.html">Services</a></li>' +
-      '<li><a href="contact.html" class="navbar__cta" data-page="contact.html">Free Estimate</a></li>' +
+      '<li><a href="/" data-page="index">Home</a></li>' +
+      '<li><a href="/services" data-page="services">Services</a></li>' +
+      '<li><a href="/contact" class="navbar__cta" data-page="contact">Free Estimate</a></li>' +
     '</ul>' +
     '<button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>';
   document.body.prepend(nav);
@@ -147,15 +147,15 @@
       '<div class="footer__cols">' +
         '<div class="footer__col">' +
           '<h4>Explore</h4>' +
-          '<a href="index.html">Home</a>' +
-          '<a href="services.html">Services</a>' +
-          '<a href="contact.html">Free Estimate</a>' +
+          '<a href="/">Home</a>' +
+          '<a href="/services">Services</a>' +
+          '<a href="/contact">Free Estimate</a>' +
         '</div>' +
         '<div class="footer__col">' +
           '<h4>Services</h4>' +
-          '<a href="services.html#cameras">Security Cameras</a>' +
-          '<a href="services.html#alarms">Security Alarms</a>' +
-          '<a href="services.html#other">Other Services</a>' +
+          '<a href="/services#cameras">Security Cameras</a>' +
+          '<a href="/services#alarms">Security Alarms</a>' +
+          '<a href="/services#other">Other Services</a>' +
         '</div>' +
         '<div class="footer__col footer__col--contact">' +
           '<h4>Contact</h4>' +
