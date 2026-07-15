@@ -1,2 +1,0 @@
-# desertsecurityservices.github.io
-Website
