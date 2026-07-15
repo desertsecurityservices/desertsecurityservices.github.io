@@ -9,7 +9,7 @@ SITE NAME: AZ Desert Security Services
 # LOGO: the logo image shown in the header & footer is LogoClear.png
 #       (in the main website folder). Replace that file to change the logo.
 TAGLINE: Security Cameras | Alarm Systems
-FOOTER: © 2026 AZ Desert Security Services (Phoenix, AZ) — All Rights Reserved.
+FOOTER: © 2026 AZ Desert Security Services (Phoenix, AZ) — All Rights Reserved. We reserve the right to decline any price match at our sole discretion.
 
 # ---------- Contact ----------
 # Put your real phone number here. It powers the Call/Text buttons.
