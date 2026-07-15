@@ -37,7 +37,7 @@
       <!-- IMPORTANT: replace the email below with your real address.
            The FIRST time this form is submitted, FormSubmit.co emails that
            address a one-time confirmation link — click it once to turn on delivery. -->
-      <form id="estimateForm" class="form-card" action="https://formsubmit.co/contact@desertsecurityservices.com" method="POST" data-reveal>
+      <form id="estimateForm" class="form-card" action="https://formsubmit.co/ajax/contact@desertsecurityservices.com" method="POST" data-reveal>
         <input type="hidden" name="_subject" value="New estimate request from your website" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_captcha" value="false" />
@@ -98,7 +98,7 @@
     set('successTitle', d['SUCCESS TITLE']); set('successText', d['SUCCESS TEXT']);
     // Send the form to your email if provided in the settings file.
     if (d['FORM EMAIL'] && d['FORM EMAIL'].indexOf('@') !== -1) {
-      document.getElementById('estimateForm').setAttribute('action', 'https://formsubmit.co/' + d['FORM EMAIL']);
+      document.getElementById('estimateForm').setAttribute('action', 'https://formsubmit.co/ajax/' + d['FORM EMAIL']);
     }
   }).catch(() => {});
 
