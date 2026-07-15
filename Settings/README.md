@@ -3,7 +3,7 @@
 A fast, clean, zero-build website. No frameworks, no build step — just HTML, one
 CSS file, and one JavaScript file. **All the words on the site live in simple text
 files inside the `Settings/` folder.** Change the text, save, and the site updates.
-
+-
 ## The pages
 
 | Page | File |
