@@ -119,23 +119,9 @@
   else if (type === 'alarms') sel.value = 'Security Alarms';
   else if (type === 'other') sel.value = 'Other Services';
 
-  // Submit the form natively (like the working reserve page) so FormSubmit
-  // handles the confirmation/thank-you flow directly. Send them back here after.
-  (function () {
-    const form = document.getElementById('estimateForm');
-    if (form && !form.querySelector('input[name="_next"]')) {
-      const next = document.createElement('input');
-      next.type = 'hidden'; next.name = '_next';
-      next.value = location.origin + location.pathname + '?sent=1';
-      form.appendChild(next);
-    }
-    // Show the inline success message if we were redirected back after sending.
-    if (new URLSearchParams(location.search).get('sent') === '1') {
-      if (form) form.style.display = 'none';
-      const ok = document.getElementById('formSuccess');
-      if (ok) ok.style.display = 'block';
-    }
-  })();
+  // Submit via AJAX and show the inline success message — stays on this page,
+  // never opens another URL (same as the working reserve page).
+  handleFormSubmit('estimateForm', 'formSuccess');
   pageReady();
 </script>
 
