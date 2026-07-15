@@ -141,7 +141,7 @@
   footer.innerHTML =
     '<div class="footer__inner">' +
       '<div class="footer__brand">' +
-        '<img class="footer__logo-img" id="footLogo" src="LogoClear.png" alt="AZ Desert Security Services" />' +
+        '<img class="footer__logo-img" id="footLogo" src="Photos/LogoClear.png" alt="AZ Desert Security Services" />' +
         '<p class="footer__tagline" id="footerTagline">Security Cameras &amp; Alarms</p>' +
       '</div>' +
       '<div class="footer__cols">' +
